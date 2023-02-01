@@ -1,4 +1,19 @@
-
+```
+Feature: REST API test with parameters
+  Scenario: Get user information
+    Given the API endpoint "/api/user/{id}" is available
+    When I send a GET request to "/api/user/123"
+    Then the response code should be 200
+    And the response should contain the following JSON:
+      """
+      {
+        "id": 123,
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      }
+      """
+      
+ ```
 
 In this example, we're testing an API endpoint that retrieves information about a user, given their ID. We start by assuming that the API endpoint "/api/user/{id}" is available. Then, we send a GET request to the endpoint "/api/user/123" and check that the response code is 200 (indicating success) and that the response body contains the expected JSON.
 
