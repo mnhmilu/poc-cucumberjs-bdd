@@ -1,3 +1,8 @@
+In this example, we're testing an API endpoint that retrieves information about a user, given their ID. We start by assuming that the API endpoint "/api/user/{id}" is available. Then, we send a GET request to the endpoint "/api/user/123" and check that the response code is 200 (indicating success) and that the response body contains the expected JSON.
+
+Note that you will need to write additional code to actually perform the API request and check the response. This example just shows the structure of the test in Cucumber.js format.
+
+
 Feature: REST API test with parameters
   Scenario: Get user information
     Given the API endpoint "/api/user/{id}" is available
