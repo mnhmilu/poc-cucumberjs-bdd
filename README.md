@@ -3,9 +3,9 @@
 
 ### Prepare Environment
 
-npm i cucumber-html-reporter
+` npm i cucumber-html-reporter `
 
-npm install -g json-server
+` npm install -g json-server`
 
 ### Sample
 
@@ -25,8 +25,5 @@ npm install -g json-server
 ```
 
 ### Reference
-
-
-
 
 [Cumcumber js documentation ](https://cucumber.io/docs/installation/javascript/)
