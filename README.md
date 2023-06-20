@@ -12,6 +12,19 @@
 
 ` npm install -g json-server`
 
+` cd bdd `
+
+run fake server 
+
+> json-server --watch db.json
+
+run the test cases
+
+```
+./node_modules/.bin/cucumber-js ./src/features/products-list.feature --require ./src/steps -f json:cucumber.json
+
+```
+
 ### Configure Fake server for mock API 
 
 [Fake Server](https://www.npmjs.com/package/json-server)
@@ -21,14 +34,6 @@
 
 - Sample 
 - Sample API Test with Datatable 
-
-
-### run the test cases
-
-```
-./node_modules/.bin/cucumber-js ./src/features/products-list.feature --require ./src/steps -f json:cucumber.json
-
-```
 
 ### Reference
 
