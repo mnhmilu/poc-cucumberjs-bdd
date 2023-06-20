@@ -12,14 +12,15 @@
 
 ` npm install -g json-server`
 
+### Configure Fake server for mock API 
+
+[Fake Server](https://www.npmjs.com/package/json-server)
+
+
 ### Sample
 
 - Sample 
 - Sample API Test with Datatable 
-
-### Fake server
-
-[Fake Server](https://www.npmjs.com/package/json-server)
 
 
 ### run the test cases
