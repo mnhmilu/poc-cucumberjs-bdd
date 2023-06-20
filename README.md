@@ -3,6 +3,11 @@
 
 ### Prepare Environment
 
+[Install NPM/NVM](https://www.hostinger.com/tutorials/how-to-install-node-ubuntu?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1001441&gclid=CjwKCAjw-b-kBhB-EiwA4fvKrLcst2fexmoKwgv-uy7LWOWqfMYy25Qwzziq-AYyjxjkRb4YPSaD7BoC9BEQAvD_BwE)
+
+- How to Install a Specific Version of Node.js Using NVM
+
+
 ` npm i cucumber-html-reporter `
 
 ` npm install -g json-server`
