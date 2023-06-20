@@ -27,10 +27,10 @@ run the all features's test cases
 
 run specific feature test cases
 
-`
+```
  ./node_modules/.bin/cucumber-js ./src/features/test.feature --require ./src/steps/testSteps.js -f json:cucumber.json
 
- `
+```
 
 
 ### Configure Fake server for mock API 
