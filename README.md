@@ -21,7 +21,7 @@ run fake server
 run the all features's test cases
 
 ```
-./node_modules/.bin/cucumber-js ./src/features/products-list.feature --require ./src/steps -f json:cucumber.json
+./node_modules/.bin/cucumber-js ./src/features/ --require ./src/steps -f json:cucumber.json
 
 ```
 
