@@ -1,27 +1,27 @@
 [
   {
     "keyword": "Feature",
-    "name": "Products List",
+    "name": "REST API test with parameters",
     "line": 1,
-    "id": "products-list",
+    "id": "rest-api-test-with-parameters",
     "tags": [],
-    "uri": "src/features/products-list.feature",
+    "uri": "src/features/test.feature",
     "elements": [
       {
-        "id": "products-list;load-the-products-list",
+        "id": "rest-api-test-with-parameters;get-user-information",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Load the products list",
+        "line": 2,
+        "name": "Get user information",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "we request the products list",
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the API endpoint \"http://localhost:3000/posts/{id}\" is available",
             "match": {
-              "location": "src/steps/productSteps.js:4"
+              "location": "src/steps/testSteps.js:7"
             },
             "result": {
               "status": "passed",
@@ -29,45 +29,43 @@
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "name",
-                      "description"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Phone XL",
-                      "A large phone with one of the best screens"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Phone Mini",
-                      "A great phone with one of the best cameras"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Phone Standard",
-                      ""
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 5,
-            "name": "we should receive",
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I send a GET request to \"http://localhost:3000/posts/1\"",
             "match": {
-              "location": "src/steps/productSteps.js:10"
+              "location": "src/steps/testSteps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response code should be 200",
+            "match": {
+              "location": "src/steps/testSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the response should contain \"nahid\"",
+            "match": {
+              "location": "src/steps/testSteps.js:43"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected response body to contain \"nahid\", but it did not.\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/nahid/workspace/test-automation-bdd/poc-cucumberjs-bdd/bdd/src/steps/testSteps.js:46:10)"
             }
           }
         ]
