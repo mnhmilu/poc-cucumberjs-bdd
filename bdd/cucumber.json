@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Products List",
+    "line": 1,
+    "id": "products-list",
+    "tags": [],
+    "uri": "src/features/products-list.feature",
+    "elements": [
+      {
+        "id": "products-list;load-the-products-list",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Load the products list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "we request the products list",
+            "match": {
+              "location": "src/steps/productSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone XL",
+                      "A large phone with one of the best screens"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone Mini",
+                      "A great phone with one of the best cameras"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone Standard",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "we should receive",
+            "match": {
+              "location": "src/steps/productSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
