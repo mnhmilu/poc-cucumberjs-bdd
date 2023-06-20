@@ -18,12 +18,20 @@ run fake server
 
 > json-server --watch db.json
 
-run the test cases
+run the all features's test cases
 
 ```
 ./node_modules/.bin/cucumber-js ./src/features/products-list.feature --require ./src/steps -f json:cucumber.json
 
 ```
+
+run specific feature test cases
+
+`
+ ./node_modules/.bin/cucumber-js ./src/features/test.feature --require ./src/steps/testSteps.js -f json:cucumber.json
+
+ `
+
 
 ### Configure Fake server for mock API 
 
