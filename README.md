@@ -10,13 +10,21 @@
 
 ` npm i cucumber-html-reporter `
 
-` npm install -g json-server`
+
 
 ` cd bdd `
 
-run fake server 
+### run fake server 
+
+Install 
+
+` npm install -g json-server`
+
+Run fake server 
 
 > json-server --watch db.json
+
+### run test cases
 
 run the all features's test cases
 
