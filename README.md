@@ -40,17 +40,8 @@ run specific feature test cases
 
 ```
 
-
-### Configure Fake server for mock API 
+### Reference
 
 [Fake Server](https://www.npmjs.com/package/json-server)
-
-
-### Sample
-
-- Sample 
-- Sample API Test with Datatable 
-
-### Reference
 
 [Cumcumber js documentation ](https://cucumber.io/docs/installation/javascript/)
