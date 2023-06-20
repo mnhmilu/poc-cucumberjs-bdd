@@ -22,7 +22,7 @@ Install
 
 Run fake server 
 
-> json-server --watch db.json
+` json-server --watch db.json `
 
 ### run test cases
 
