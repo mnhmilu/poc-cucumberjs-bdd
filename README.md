@@ -26,6 +26,9 @@ Run fake server
 
 ### run test cases
 
+`cd bdd`
+
+
 run the all features's test cases
 
 ```
