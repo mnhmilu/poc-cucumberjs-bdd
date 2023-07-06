@@ -57,11 +57,11 @@ run with reports
 
 ./node_modules/.bin/cucumber-js ./src/features/registration.feature --require ./src/steps/registrationSteps.js -f json:cucumber.json -f json:test/report/cucumber_report.json
 
-node src/index.js
-
-
 ```
 
+`
+node src/index.js
+`
 
 ### Reference
 
