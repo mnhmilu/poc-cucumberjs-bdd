@@ -1,71 +1,104 @@
 [
   {
     "keyword": "Feature",
-    "name": "REST API test with parameters",
+    "name": "Registration",
     "line": 1,
-    "id": "rest-api-test-with-parameters",
+    "id": "registration",
     "tags": [],
-    "uri": "src/features/test.feature",
+    "uri": "src/features/registration.feature",
     "elements": [
       {
-        "id": "rest-api-test-with-parameters;get-user-information",
+        "id": "registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-data.",
         "keyword": "Scenario",
         "line": 2,
-        "name": "Get user information",
+        "name": "Verify that the new user registration is successful after passing correct data.",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 3,
-            "name": "the API endpoint \"http://localhost:3000/posts/{id}\" is available",
-            "match": {
-              "location": "src/steps/testSteps.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 4,
-            "name": "I send a GET request to \"http://localhost:3000/posts/1\"",
+            "name": "I am in registration page",
             "match": {
-              "location": "src/steps/testSteps.js:12"
+              "location": "src/steps/registrationSteps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 0
             }
           },
           {
-            "arguments": [],
-            "keyword": "Then ",
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstName",
+                      "Tom"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lastName",
+                      "Jerry"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "phone",
+                      "123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "tomandjerry@cartoon.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
             "line": 5,
-            "name": "the response code should be 200",
+            "name": "I provide below information during registeration and I submit the details",
             "match": {
-              "location": "src/steps/testSteps.js:35"
+              "location": "src/steps/registrationSteps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 23000000
             }
           },
           {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "the response should contain \"nahid\"",
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "message",
+                      "registration successful"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "statusCode",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the registration should be successful and response should contain below items",
             "match": {
-              "location": "src/steps/testSteps.js:43"
+              "location": "src/steps/registrationSteps.js:39"
             },
             "result": {
               "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected response body to contain \"nahid\", but it did not.\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/nahid/workspace/test-automation-bdd/poc-cucumberjs-bdd/bdd/src/steps/testSteps.js:46:10)"
+              "duration": 2000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +2000\n\n    at World.<anonymous> (/home/nahid/workspace/test-automation-bdd/poc-cucumberjs-bdd/bdd/src/steps/registrationSteps.js:46:30)"
             }
           }
         ]
