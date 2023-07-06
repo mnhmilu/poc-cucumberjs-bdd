@@ -43,7 +43,7 @@ run specific feature test cases ( example registration Process)
 
 ```
 
-### Add HTML Reports
+### run test cases with HTML Reports
 
 [Cucumber HTML Report Documentation ](https://www.npmjs.com/package/cucumber-html-reporter)
 
