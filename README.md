@@ -14,7 +14,7 @@
 
 ` cd bdd `
 
-### run fake server 
+### run fake server to mock API behaviour
 
 Install 
 
