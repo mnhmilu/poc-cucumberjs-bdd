@@ -2,7 +2,7 @@
   "posts": [
     {
       "message": "registration successful",
-      "statusCode": "2000"
+      "statusCode": "200"
     }
   ]
 }

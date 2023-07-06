@@ -1,4 +1,4 @@
-const { Given, When, Then, AfterAll, After } = require("cucumber");
+const { When, Then,Given } = require('cucumber')
 const assert = require("assert").strict;
 const request = require("../util/restHelper");
 const { expect } = require("chai");
