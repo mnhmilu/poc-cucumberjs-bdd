@@ -63,6 +63,9 @@ run with reports
 node src/index.js
 `
 
+![image](https://github.com/mnhmilu/poc-cucumberjs-bdd/assets/7475000/96bba618-7546-4ae2-8f5f-72622825b335)
+
+
 ### Reference
 
 [Fake Server](https://www.npmjs.com/package/json-server)
