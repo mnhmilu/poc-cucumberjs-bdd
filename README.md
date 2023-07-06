@@ -45,7 +45,7 @@ run specific feature test cases ( example registration Process)
 
 ### Add HTML Reports
 
-[Cucumber HTML Report](https://www.npmjs.com/package/cucumber-html-reporter)
+[Cucumber HTML Report Documentation ](https://www.npmjs.com/package/cucumber-html-reporter)
 
 `npm install cucumber-html-reporter --save-dev`
 
