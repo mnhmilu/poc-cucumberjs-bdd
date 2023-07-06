@@ -43,6 +43,26 @@ run specific feature test cases ( example registration Process)
 
 ```
 
+### Add HTML Reports
+
+[Cucumber HTML Report](https://www.npmjs.com/package/cucumber-html-reporter)
+
+`npm install cucumber-html-reporter --save-dev`
+
+add index.js file (see documentation)
+
+run with reports
+
+```
+
+./node_modules/.bin/cucumber-js ./src/features/registration.feature --require ./src/steps/registrationSteps.js -f json:cucumber.json -f json:test/report/cucumber_report.json
+
+node src/index.js
+
+
+```
+
+
 ### Reference
 
 [Fake Server](https://www.npmjs.com/package/json-server)
