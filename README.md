@@ -36,10 +36,10 @@ run the all features's test cases
 
 ```
 
-run specific feature test cases
+run specific feature test cases ( example registration Process)
 
 ```
- ./node_modules/.bin/cucumber-js ./src/features/test.feature --require ./src/steps/testSteps.js -f json:cucumber.json
+./node_modules/.bin/cucumber-js ./src/features/registration.feature --require ./src/steps/registrationSteps.js -f json:cucumber.json
 
 ```
 
