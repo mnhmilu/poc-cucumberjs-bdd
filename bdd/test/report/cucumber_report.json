@@ -1,27 +1,27 @@
 [
   {
     "keyword": "Feature",
-    "name": "Registration",
+    "name": "Products List",
     "line": 1,
-    "id": "registration",
+    "id": "products-list",
     "tags": [],
-    "uri": "src/features/registration.feature",
+    "uri": "src/features/products-list.feature",
     "elements": [
       {
-        "id": "registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-data.",
+        "id": "products-list;load-the-products-list",
         "keyword": "Scenario",
-        "line": 2,
-        "name": "Verify that the new user registration is successful after passing correct data.",
+        "line": 3,
+        "name": "Load the products list",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
+            "keyword": "When ",
             "line": 4,
-            "name": "I am in registration page",
+            "name": "we request the products list",
             "match": {
-              "location": "src/steps/registrationSteps.js:9"
+              "location": "src/steps/productSteps.js:4"
             },
             "result": {
               "status": "passed",
@@ -34,66 +34,36 @@
                 "rows": [
                   {
                     "cells": [
-                      "firstName",
-                      "Tom"
+                      "name",
+                      "description"
                     ]
                   },
                   {
                     "cells": [
-                      "lastName",
-                      "Jerry"
+                      "Phone XL",
+                      "A large phone with one of the best screens"
                     ]
                   },
                   {
                     "cells": [
-                      "phone",
-                      "123456789"
+                      "Phone Mini",
+                      "A great phone with one of the best cameras"
                     ]
                   },
                   {
                     "cells": [
-                      "email",
-                      "tomandjerry@cartoon.com"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I provide below information during registeration and I submit the details",
-            "match": {
-              "location": "src/steps/registrationSteps.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "message",
-                      "registration successful"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "statusCode",
-                      "200"
+                      "Phone Standard",
+                      ""
                     ]
                   }
                 ]
               }
             ],
             "keyword": "Then ",
-            "line": 10,
-            "name": "the registration should be successful and response should contain below items",
+            "line": 5,
+            "name": "we should receive",
             "match": {
-              "location": "src/steps/registrationSteps.js:39"
+              "location": "src/steps/productSteps.js:10"
             },
             "result": {
               "status": "passed",
