@@ -7,10 +7,9 @@
 
 - How to Install a Specific Version of Node.js Using NVM
 
+  `nvm use 18.0.0`
 
 ` npm i cucumber-html-reporter `
-
-
 
 ` cd bdd `
 
